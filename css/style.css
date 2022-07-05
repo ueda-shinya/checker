@@ -1,45 +1,86 @@
 @charset "UTF-8";
 
-/************************************************
-    heder   */
-body{
-    min-width: 1920px;
+
+
+.body__area{
+    width:1780px;
+    height: 710px;
+    background-color:#F7F7F7 ;
 }
 
-/************************************************
-    */
+.text__1st{
+    width: 100%;
+    padding-top: 35px;
+    text-align: center;
+    font-size: 22px;
+    color: #DB5C5F;
 
-/************************************************
-    */
-
-    /************************************************
-    */
-
-    /************************************************
-    */
-
-    /************************************************
-    */
-
-    /************************************************
-    */
-
-    /************************************************
-    */
-
-    /************************************************
-    */
-
-    /************************************************
-    */
+}
+.text__1st span{
+    color: #989898;
+}
+.text__2nd{
+    width: 100%;
+    margin-top: 44px;
+    text-align: center;
+    font-size: 52px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #161616;
+}
 
 
+.boxarea{
+    width:100%;
+    display: flex;
+    margin-top: 110px;
+    justify-content: space-around;
+}
 
+.box{
+}
+.checker {
+    position: relative;
+    width:536px;
+    height: 373px;
+    margin-top: 0px;
+    text-align: center;
+    display: table;
 
-
-
-/************************************************
-    レスポンシブ対応 */
-
-@media screen and (max-width: 767px) {
+    background: linear-gradient(45deg, #F3FAFD 25%, transparent 25%, transparent 75%, #F3FAFD 75%),
+    linear-gradient(45deg, #F3FAFD 25%, transparent 25%, transparent 75%, #F3FAFD 75%),#E5F5FD;
+    background-size: 14px 14px;
+    background-position: 0 0, 7px 7px;
+    border-radius: 21px;
+}
+.checker::before{
+    position: absolute;
+    top:-10px;
+    left: 20px;
+    content: "STEP";
+    font-size: 20px;
+    font-weight: bold;
+}
+.checker .inner{
+    width: 100%;
+    height: 373px;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 1.6;
+    display: table-cell;
+    vertical-align:middle;
+}
+.checker .nummber{
+    position: absolute;
+    top: -30px;
+    left: 80px;
+    font-size: 64px;
+    font-weight: bold;
+}
+.checker .arrow{
+    position: absolute;
+    top: 180px;
+    left: 550px;
+    font-size: 24px;
+    font-weight: bold;
 }
